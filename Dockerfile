@@ -19,7 +19,8 @@ CMD [ "node", "server.js" ]
 FROM mhart/alpine-node:12 as test
 WORKDIR /usr/src/app
 COPY --from=development /usr/src/app/ .
-RUN ["npm", "run", "test"]
+
+RUN ["npm", "run", "-s", "test"]
 
 
 FROM mhart/alpine-node:12 as production
