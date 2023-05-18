@@ -11,7 +11,7 @@ phases:
      - IMAGE_TAG=${COMMIT_HASH:=latest}
  build:
    commands:
-     - docker build --platform linux/amd64 -t nodejs-test .
+     - docker build -t nodejs-test .
      - docker tag nodejs-test:latest 101234771966.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
  post_build:
    commands:
