@@ -1,6 +1,6 @@
 [
   {
     "name": "sample-app",
-    "imageUri": "101234771966.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest"
+    "image": "101234771966.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest"
   }
 ]
