@@ -17,6 +17,6 @@ phases:
    commands:
      - docker push 101234771966.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
      - docker tag nodejs-test:latest 101234771966.dkr.ecr.us-east-1.amazonaws.com/nodejs-test:latest
-     - printf '[{"name":"nestjs-graphql","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+     - printf '[{"name":"nodejs-test","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
  files: imagedefinitions.json
